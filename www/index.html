@@ -50,12 +50,12 @@
 	<h1> What would you'd like to eat? </h1>
 	
 	<ul data-role="listview" data-inset="true" >
-	<li><a href="window.open('choose_town.html', '_blank','location=no');" data-transition="slidedown"> <img src="images/sushis.jpg"/> <h3> Restaurant  Menu</h3></a></li>
-	<li><a href="window.open('choose_town.html', '_blank','location=no');"  data-transition="slidedown"> <img src="images/pizza.jpg"/> <h3> Latest Offer </h3></a></li>
-	<li><a href="window.open('choose_town.html', '_blank','location=no');"  data-transition="slidedown"> <img src="images/kebap.jpg"/> <h3> Online Orders</h3></a></li>
-	<li><a href="window.open('choose_town.html', '_blank','location=no');"  data-transition="slidedown"> <img src="images/burger.jpg"/> <h3>  Book A table</h3></a></li>
-	<li><a href="window.open('choose_town.html', '_blank','location=no');"  data-transition="slidedown"> <img src="images/nems.jpg"/> <h3> Contact Us </h3></a></li>
-	<li><a href="window.open('choose_town.html', '_blank','location=no');"  data-transition="slidedown"> <img src="images/tradi.jpg"/> <h3> Select Restaurant</h3></a></li>	
+	<li><a onclick="choose_town()" data-transition="slidedown"> <img src="images/sushis.jpg"/> <h3> Restaurant  Menu</h3></a></li>
+	<li><a onclick="choose_town()"  data-transition="slidedown"> <img src="images/pizza.jpg"/> <h3> Latest Offer </h3></a></li>
+	<li><a onclick="choose_town()"  data-transition="slidedown"> <img src="images/kebap.jpg"/> <h3> Online Orders</h3></a></li>
+	<li><a onclick="choose_town()"  data-transition="slidedown"> <img src="images/burger.jpg"/> <h3>  Book A table</h3></a></li>
+	<li><a onclick="choose_town()" data-transition="slidedown"> <img src="images/nems.jpg"/> <h3> Contact Us </h3></a></li>
+	<li><a onclick="choose_town()"  data-transition="slidedown"> <img src="images/tradi.jpg"/> <h3> Select Restaurant</h3></a></li>	
 	</ul>	
 	
 	</div>
@@ -114,7 +114,14 @@
         }
 		);
 	}
-	   
+	    app.initialize();
+		
+		
+		function choose_town(){
+		
+		window.open('choose_town.html', '_blank','location=no');
+	
+		}
 	   
 	   
 	   </script>
